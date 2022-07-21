@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Android';
+    src: url(/desafio010/pacote-projeto-d010/__MACOSX/fontes/._idroid.otf) format(opentype);
+}
+:root{
+    --cor0: blue;
+    --cor1: white;
+    --cor2: black;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Android', sans-serif;
+}
+body{
+    font-family: var(--fonte0);
+    margin: 0px;
+    background-color: rgb(72, 142, 221);
+}
+header#cabeçalho{
+    background-image: linear-gradient(to top, rgb(10, 53, 245),rgb(95, 190, 245));
+    color: white;
+    padding-bottom: 5px;
+}
+
+main{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    margin: auto;
+    width: 1000px;
+}
+p{
+    text-align: justify;
+}
+a{  
+    color: rgb(39, 193, 253);
+    text-decoration: none;
+    padding: 2px;
+}
+h1#principal{
+    font-family: var(--fonte1);
+    margin: 0px;
+    padding:90px 50px 25px 50px ;
+    text-align: center;
+}
+.menu{
+    color: white;
+    margin: 10px;
+}
+aside{
+    background-color: rgb(130, 184, 255);
+    border-radius: 10px;
+   
+}
+p#subprincipal{
+    
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+a:hover{
+    color: white;
+    background-color: rgb(51, 149, 247);
+    border-radius: 5px;
+}
+.topico{
+    background-image: linear-gradient(to right, rgb(90, 138, 243),white);
+
+}
+footer{
+    background-color: rgb(37, 59, 248);
+    color: white;
+    text-align: center;
+}
+ul{
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+div.video{
+    position: relative;
+    background-color: blue;
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
