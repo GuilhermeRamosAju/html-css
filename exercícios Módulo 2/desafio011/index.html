@@ -12,12 +12,23 @@
             padding: 0px;
         }
        body{
+        height: 96vh;
+        position: relative;
         background-image: url('imagens/espaco.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
        }
        picture.astronauta{
-        display: inline-block;
+        position: absolute;
         max-width: 500px;
-        margin: auto;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+     
        }
     </style>
 </head>
