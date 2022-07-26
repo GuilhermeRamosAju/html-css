@@ -44,6 +44,7 @@ pre{
     font-family: 'Sriracha', cursive;
     font-size: 3.3em;
     font-weight: normal;
+    
 }
 
 .primeirofundo{
@@ -63,11 +64,12 @@ pre{
 }
 .fundobranco{
     background-color: white;
+    box-shadow: 7px 1px rgba(0, 0, 0, 0.61);
 }
 .fundopreto{
     color: white;
     background-color: rgba(0, 0, 0, 0.452);
-    width: 600px;
+    max-width: 600px;
     
 }
 footer{
