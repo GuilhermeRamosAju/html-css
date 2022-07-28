@@ -11,6 +11,7 @@
         }
 
         table{
+            position: relative;
             width: 500px;
         }
 
@@ -19,9 +20,25 @@
             padding: 10px;
         }
 
+        caption{
+            background-color: darkgray;
+            color: black;
+            font-size: 1.6em;
+            padding: 8px;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: grey;
+        }
         thead, tfoot{
             background-color: grey;
             color: white;
+            text-align: center;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lavenderblush;
         }
     </style>
 </head>
@@ -29,10 +46,11 @@
     <h1>Uso de Tabelas Grandes</h1>
 
     <table>
+        <caption>Poupulação das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População (2021)</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População (2021)</th>
             </tr>
         </thead>
 
@@ -150,7 +168,10 @@
         </tbody>
 
         <tfoot>
-
+            <tr>
+                <th scope="row">População Total</th>
+                <td><strong>213.317.639</strong></td>
+            </tr>
         </tfoot>
     </table>
 </body>
